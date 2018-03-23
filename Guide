@@ -1,0 +1,8 @@
+mount
+mount -o remount -o rw /system
+
+
+objdump -tT ./libra15.1/out/target/product/libra/system/lib/libshim_atomic.so
+
+
+
