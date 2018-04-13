@@ -4,5 +4,6 @@ mount -o remount -o rw /system
 
 objdump -tT ./libra15.1/out/target/product/libra/system/lib/libshim_atomic.so
 
-
+/etc/udev/rules.d/
+change the android rules for adding usbid of xiaomi devices, listed by lsusb.
 
