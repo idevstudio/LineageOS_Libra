@@ -7,3 +7,10 @@ objdump -tT ./libra15.1/out/target/product/libra/system/lib/libshim_atomic.so
 /etc/udev/rules.d/
 change the android rules for adding usbid of xiaomi devices, listed by lsusb.
 
+
+
+This happened with me on Windows 10 with Android Studio 3.1. The SDK was missing & I couldn't download or install it with the IDE. Android Studio wasn't downloading or installing the SDK properly, despite going through the steps. An error would appear at the end of the SDK configuration wizard telling me the SDK hadn't been installed b/c the sdk/tools directory didn't exist (no sh1t sherlock). I had not previously downloaded or installed Android Studio or the SDK.
+
+It turns out that Android Studio 3.1 didn't have option checked for 'Enable embedded Maven repository' in the IDE Preferences.
+
+After enabling the embedded Maven repo & restarting Android Studio, the SDK configuration wizard started up & successfully downloaded/installed the SDK.
